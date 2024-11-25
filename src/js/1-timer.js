@@ -78,6 +78,9 @@ function timerChanger(userSelectedDate) {
 
     if (timer) { 
         clearInterval(timer);
+        startBTN.disabled = false;
+        inputField.disabled = false;
+        inputField.style.cursor = "text";
     }
    
     
