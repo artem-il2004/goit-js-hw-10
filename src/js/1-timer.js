@@ -86,8 +86,10 @@ function timerChanger(userSelectedDate) {
     const timeDiff = userSelectedDate - currTime;
         
         if (timeDiff <= 0) {
-            clearInterval(timer);
-    
+          clearInterval(timer);
+          startBTN.disabled = false;
+          inputField.disabled = false;
+          inputField.style.cursor = "text";
         }
         else { 
           startBTN.disabled = true;
